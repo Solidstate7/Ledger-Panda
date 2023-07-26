@@ -53,7 +53,7 @@ for (let i = 0; i < list.numbers.length; ++i) {
     } else if (item == "titles") {
       const aElem = document.createElement("a");
       aElem.innerHTML = list[item][i];
-      aElem.href = `./board/?idx=${i}`;
+      aElem.href = `../board/?idx=${i}`;
       wrapDiv4.classList.add("title");
       wrapDiv4.append(aElem);
     } else if (item == "incomes") {

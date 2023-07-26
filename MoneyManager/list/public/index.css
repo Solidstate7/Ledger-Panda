@@ -19,10 +19,9 @@ h1 {
 }
 
 .item {
-  /* display: flex; */
+  display: flex;
   /* justify-content: center; */
   /* margin: auto; */
-  flex: 1;
 }
 
 .item div {
@@ -36,7 +35,7 @@ h1 {
 }
 
 .date {
-  background-color: blueviolet;
+  background-color: steelblue;
   border-radius: 10px;
 }
 
