@@ -12,7 +12,6 @@ console.log(list);
 
 const listElem = document.getElementById("list");
 
-
 const divList = [
   "numbers",
   "dates",
@@ -54,6 +53,7 @@ for (let i = 0; i < list.numbers.length; ++i) {
       const aElem = document.createElement("a");
       aElem.innerHTML = list[item][i];
       aElem.href = `../board/?idx=${i}`;
+      aElem.style = "font-weight:bolder; text-decoration: none";
       wrapDiv4.classList.add("title");
       wrapDiv4.append(aElem);
     } else if (item == "incomes") {
