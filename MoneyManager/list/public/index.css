@@ -1,7 +1,8 @@
 #container {
   text-align: center;
+  /* margin:auto; */
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow:column wrap;
   border: 1px solid black;
   /* justify-content: center; */
   
@@ -14,15 +15,11 @@ a {
   /* font-size: 1.25rem; */
 }
 
-h1 {
-  color: rgb(161, 255, 168);
-}
-
 #list {
   margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid black;
+  /* display: flex; */
+  /* flex-flow: row wrap; */
+  /* border: 1px solid black; */
   /* width: 800px; */
   /* text-align: center; */
   /* align-items: center; */
@@ -39,8 +36,9 @@ h1 {
 }
 
 .item div {
+  /* flex-flow: column wrap; */
   padding: 1rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* border-radius: 10px; */
   /* width: 125; */
   /* height: 60; */
@@ -49,8 +47,12 @@ h1 {
   /* flex: 1 2 auto; */
 }
 
+.item > div {
+  background: linear-gradient(45deg, thistle, beige, azure);
+}
+
 .numbers {
-  background-color: white;
+  /* background-color: white; */
 }
 
 .date {
@@ -61,16 +63,14 @@ h1 {
   background-color: beige;
 }
 
-.spend {
-  /* background-color: beige; */
-}
-
 .title {
   background-color: beige;
 }
 
 #create {
-  background-color: brown;
-  float: right;
+  background: linear-gradient(45deg, thistle, beige, azure);
+  font-size: 4rem;
+  margin-top: 2rem;
+  /* float: right; */
   /* display: none; */
 }
