@@ -77,7 +77,7 @@ a {
 } */
 
 #create {
-  background: linear-gradient(45deg, thistle, beige, azure);
+  /* background: linear-gradient(45deg, thistle, beige, azure); */
   font-size: 3rem;
   color:rgba(0,0,0,0.85);
   border-radius: 10px;
