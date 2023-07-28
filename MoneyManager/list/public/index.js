@@ -57,7 +57,7 @@ for (let i = 0; i < list.numbers.length; ++i) {
       wrapDiv4.classList.add("title");
       wrapDiv4.append(aElem);
     } else if (item == "spends") {
-      wrapDiv5.innerHTML = list[item][i];
+      wrapDiv5.innerHTML = `${list[item][i]}원`;
       wrapDiv5.classList.add("spend");
     } else if (item == "transactions") {
       if (list[item][i] == "income") {

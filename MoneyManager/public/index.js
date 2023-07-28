@@ -5,4 +5,4 @@ document.getElementById("Logo").onclick = () => {
 console.log(localStorage.getItem("totals"));
 
 const totalElem = document.getElementById("totoalAccount");
-totalElem.innerHTML = localStorage.getItem("totals") + "원";
+totalElem.innerHTML = `Balance: ${localStorage.getItem("totals")}원`;
