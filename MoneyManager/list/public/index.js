@@ -59,7 +59,6 @@ for (let i = 0; i < list.numbers.length; ++i) {
     } else if (item == "spends") {
       wrapDiv5.innerHTML = list[item][i];
       wrapDiv5.classList.add("spend");
-      total += +list[item][i];
     } else if (item == "transactions") {
       if (list[item][i] == "income") {
         wrapDiv5.style = "background-color:azure";
@@ -84,5 +83,21 @@ for (let i = 0; i < list.numbers.length; ++i) {
   listElem.append(mdiv);
 }
 
-localStorage.setItem("totals", total);
-// console.log(total);
+// localStorage.setItem("totals", total);
+
+// console.log(list.transactions);
+function totalCalc() {
+  list.numbers.forEach((item) => {
+    // console.log(list.transactions[item - 1]);
+    if (list.transactions[item - 1] == "expense") {
+      total -= +list.spends[item - 1];
+    } else if (list.transactions[item - 1] == "income") {
+      total += +list.spends[item - 1];
+    }
+  });
+  return total;
+}
+
+// console.log(totalCalc());
+
+localStorage.setItem("totals", totalCalc());
